@@ -1,0 +1,93 @@
+@use 'variables';
+
+.third-section {
+   padding-top: 147px;
+   background-color: #E5E5E5;
+
+    .third-section-titles {
+    text-align: center;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: normal;
+            color: variables.$color-title;
+            font-size: 24px;
+            padding-bottom: 17px;
+        }
+
+        .section-title {
+                font-size: 41px;
+                font-weight: normal;
+                color: variables.$color-primary;
+                margin: 0;
+                padding-bottom: 56px;
+                text-transform: uppercase;
+        }
+    }
+    
+    .third-section-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 140px;
+        padding-right: 140px;
+
+        .first-content {
+            width: 30%;
+            background-color: variables.$color-white;
+            border-radius: 8px;
+
+            img {
+                // width: 64px;
+                // height: 64px;
+                padding-top: 72px;
+                padding-left: 50px;
+                padding-bottom: 15px;
+            }
+
+            .first-content-title {
+                padding-left: 50px;
+                padding-right: 50px;
+                color: variables.$color-text;
+                font-size: 24px;
+               font-weight: normal;
+            }
+
+            .first-content-description {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-bottom: 72px;
+                color: variables.$color-p;
+                font-size: 13px;
+            }
+        }
+        .second-content {
+            width: 30%;
+            background-color: variables.$color-primary;
+
+            img {
+                // width: 64px;
+                // height: 64px;
+                padding-top: 72px;
+                padding-left: 50px;
+                padding-bottom: 15px;
+            }
+
+            .first-content-title {
+                padding-left: 50px;
+                padding-right: 50px;
+                color: variables.$color-white;
+                font-size: 24px;
+               font-weight: normal;
+            }
+
+            .first-content-description {
+                padding-left: 50px;
+                padding-right: 50px;
+                padding-bottom: 72px;
+                color: variables.$color-white;
+                font-size: 13px;
+            }
+        }
+    }
+}
