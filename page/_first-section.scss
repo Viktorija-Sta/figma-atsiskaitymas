@@ -25,17 +25,18 @@
         }
         .button {
             display: grid;
-            grid-template-columns: 3fr 1fr;
+            grid-template-columns: 6fr 1fr;
             justify-content: center;
             justify-items: center;
             align-items: center;
-            background: linear-gradient(0.25turn,#647B64,#66AC66);
+            background: variables.$color-button;
             
             .section-link {
                 text-decoration: none;
                 color: variables.$color-white;
                 padding: 27px 186px 26px 0px;
                 text-transform: uppercase;
+                
             }
         }
     }

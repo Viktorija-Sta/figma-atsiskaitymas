@@ -1,0 +1,92 @@
+@use 'variables';
+
+
+.second-section {
+    width: 100%;
+    padding-top: 244px;
+    padding-left: 170px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    .second-section-content {
+        padding-right: 109px;
+        grid-column: 1 / 2;
+
+        .title {
+            text-transform: uppercase;
+            font-weight: normal;
+            color: variables.$color-title;
+            font-size: 24px;
+
+        }
+
+        .section-title {
+            font-size: 41px;
+            font-weight: normal;
+            color: variables.$color-primary;
+            margin: 0;
+            padding-bottom: 40px;
+            text-transform: uppercase;
+        }
+        .section-description {
+            padding-bottom: 40px;
+        }
+        .button {
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            background: variables.$color-button;
+            
+
+            .section-link {
+                text-decoration: none;
+                color: variables.$color-white;
+                padding: 27px 186px 26px 0px;
+                text-transform: uppercase;
+                margin-left: 0px;
+            }
+        }
+    }
+    .second-section-communication {
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 78px;
+
+        .first-communication {
+            img { 
+              background-color: #647B64;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            .communication-title {
+               color: variables.$color-text;
+               font-size: 24px;
+               font-weight: normal;
+
+            }
+            .communication-description {
+                font-size: 13px;
+                color: variables.$color-p;
+            }
+        }
+        .second-communication {
+             img {
+                background-color: variables.$color-white;
+                padding: 10px;
+                border-radius: 8px;
+            }
+            .communication-title {
+                color: variables.$color-text;
+                font-size: 24px;
+                font-weight: normal;
+            }
+            .communication-description {
+                font-size: 13px;
+                color: variables.$color-p;
+            }
+        }
+    }
+}

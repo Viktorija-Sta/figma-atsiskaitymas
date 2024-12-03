@@ -58,7 +58,7 @@
 }
 .first-section .first-section-content .button {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 6fr 1fr;
   justify-content: center;
   justify-items: center;
   align-items: center;
@@ -75,6 +75,84 @@
   position: absolute;
   top: 156px;
   left: 897px;
+}
+
+.second-section {
+  width: 100%;
+  padding-top: 244px;
+  padding-left: 170px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+.second-section .second-section-content {
+  padding-right: 109px;
+  grid-column: 1/2;
+}
+.second-section .second-section-content .title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #F3B562;
+  font-size: 24px;
+}
+.second-section .second-section-content .section-title {
+  font-size: 41px;
+  font-weight: normal;
+  color: #647b64;
+  margin: 0;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.second-section .second-section-content .section-description {
+  padding-bottom: 40px;
+}
+.second-section .second-section-content .button {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background: linear-gradient(0.25turn, #647B64, #66AC66);
+}
+.second-section .second-section-content .button .section-link {
+  text-decoration: none;
+  color: #FEFEFE;
+  padding: 27px 186px 26px 0px;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+.second-section .second-section-communication {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 78px;
+}
+.second-section .second-section-communication .first-communication img {
+  background-color: #647B64;
+  padding: 10px;
+  border-radius: 8px;
+}
+.second-section .second-section-communication .first-communication .communication-title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: normal;
+}
+.second-section .second-section-communication .first-communication .communication-description {
+  font-size: 13px;
+  color: #4F4F4F;
+}
+.second-section .second-section-communication .second-communication img {
+  background-color: #FEFEFE;
+  padding: 10px;
+  border-radius: 8px;
+}
+.second-section .second-section-communication .second-communication .communication-title {
+  color: #333333;
+  font-size: 24px;
+  font-weight: normal;
+}
+.second-section .second-section-communication .second-communication .communication-description {
+  font-size: 13px;
+  color: #4F4F4F;
 }
 
 *, *::before, *::after {
