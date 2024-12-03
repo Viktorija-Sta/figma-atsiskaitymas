@@ -57,17 +57,16 @@
   font-size: large;
 }
 .first-section .first-section-content .button {
+  width: 80%;
   display: grid;
   grid-template-columns: 6fr 1fr;
-  justify-content: center;
-  justify-items: center;
   align-items: center;
   background: linear-gradient(0.25turn, #647B64, #66AC66);
 }
 .first-section .first-section-content .button .section-link {
   text-decoration: none;
   color: #FEFEFE;
-  padding: 27px 186px 26px 0px;
+  padding: 27px;
   text-transform: uppercase;
 }
 .first-section .illustration img {
@@ -106,17 +105,16 @@
   padding-bottom: 40px;
 }
 .second-section .second-section-content .button {
+  width: 80%;
   display: grid;
   grid-template-columns: 6fr 1fr;
-  justify-content: center;
-  justify-items: center;
   align-items: center;
   background: linear-gradient(0.25turn, #647B64, #66AC66);
 }
 .second-section .second-section-content .button .section-link {
   text-decoration: none;
   color: #FEFEFE;
-  padding: 27px 186px 26px 0px;
+  padding: 27px;
   text-transform: uppercase;
   margin-left: 0px;
 }
@@ -156,8 +154,10 @@
 }
 
 .third-section {
+  width: 100%;
   padding-top: 147px;
   background-color: #E5E5E5;
+  padding-bottom: 171px;
 }
 .third-section .third-section-titles {
   text-align: center;
@@ -211,6 +211,7 @@
 .third-section .third-section-content .second-content {
   width: 30%;
   background-color: #647b64;
+  border-radius: 8px;
 }
 .third-section .third-section-content .second-content img {
   padding-top: 72px;
@@ -230,6 +231,60 @@
   padding-bottom: 72px;
   color: #FEFEFE;
   font-size: 13px;
+}
+
+.fourth-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 100px;
+  padding-left: 140px;
+  padding-right: 167px;
+}
+.fourth-section img {
+  width: 563px;
+  height: 545px;
+}
+.fourth-section .fourth-section-content {
+  width: 30%;
+}
+.fourth-section .fourth-section-content .title {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #F3B562;
+  font-size: 24px;
+}
+.fourth-section .fourth-section-content .section-title {
+  font-size: 41px;
+  font-weight: normal;
+  color: #647b64;
+  margin: 0;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+}
+.fourth-section .fourth-section-content .section-description {
+  font-size: 13px;
+  color: #4F4F4F;
+}
+.fourth-section .button {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+  background: linear-gradient(0.25turn, #647B64, #66AC66);
+}
+.fourth-section .button .section-link {
+  text-decoration: none;
+  color: #FEFEFE;
+  padding: 27px;
+  text-transform: uppercase;
+  margin-left: 0px;
+}
+.fourth-section .button img {
+  width: 22px;
+  height: 15px;
 }
 
 *, *::before, *::after {

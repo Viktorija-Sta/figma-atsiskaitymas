@@ -32,10 +32,9 @@
             padding-bottom: 40px;
         }
         .button {
+            width: 80%;
             display: grid;
             grid-template-columns: 6fr 1fr;
-            justify-content: center;
-            justify-items: center;
             align-items: center;
             background: variables.$color-button;
             
@@ -43,7 +42,7 @@
             .section-link {
                 text-decoration: none;
                 color: variables.$color-white;
-                padding: 27px 186px 26px 0px;
+                padding: 27px ;
                 text-transform: uppercase;
                 margin-left: 0px;
             }
