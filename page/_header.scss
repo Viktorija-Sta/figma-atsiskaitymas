@@ -1,0 +1,41 @@
+@use 'variables';
+
+
+.top-line {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    justify-content: space-between;
+    
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        align-items: center;
+        padding-left: 140px;
+        img {
+            padding-right: 10px;
+        }
+        p {
+            color:variables.$color-primary;
+            font-weight: bold;
+        }
+    }
+    .list-in-row {
+        padding-right: 140px;
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            display: inline;
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color: #333333;
+            padding-right: 48px;
+        }
+    }
+}
+

@@ -1,0 +1,44 @@
+.top-line {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.top-line .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  padding-left: 140px;
+}
+.top-line .logo img {
+  padding-right: 10px;
+}
+.top-line .logo p {
+  color: #647b64;
+  font-weight: bold;
+}
+.top-line .list-in-row {
+  padding-right: 140px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.top-line .list-in-row li {
+  display: inline;
+  list-style-type: none;
+}
+.top-line .list-in-row a {
+  text-decoration: none;
+  color: #333333;
+  padding-right: 48px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}/*# sourceMappingURL=style.css.map */
