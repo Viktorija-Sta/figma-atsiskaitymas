@@ -1,13 +1,29 @@
 @use 'variables';
 
 .fifth-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 140px;
+    padding-right: 140px;
+
     .fifth-section-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .fifth-section-title {
             .title {
-
+            text-transform: uppercase;
+            font-weight: normal;
+            color: variables.$color-title;
+            font-size: 24px;
             }
             .section-title {
-
+                font-size: 41px;
+                font-weight: normal;
+                color: variables.$color-primary;
+                margin: 0;
+                padding-bottom: 40px;
+                text-transform: uppercase;
             }
         }
         .buttons {
@@ -16,6 +32,30 @@
             }
             .active-button {
                 
+            }
+        }
+    }
+    .review {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+        .first-review {
+            .review-title {
+                .image {
+                    width: 159px;
+                    height: 268px;
+                }
+                .review-top-title {
+    
+                }
+                .name {
+    
+                }
+            }
+            .section-description {
+                font-size: 13px;
+            color: variables.$color-p;
             }
         }
     }
