@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    gap: 100px;
+    gap: 50px;
     padding-left: 140px;
     padding-right: 167px;
 
@@ -26,11 +26,7 @@
     }
     .fourth-section-content {
         width: 30%;
-        
-        @include r.lg {
-            width: 60%;
-        }
-        
+           
         @include r.sm {
             width: 60%;
         }

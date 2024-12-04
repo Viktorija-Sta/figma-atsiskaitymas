@@ -481,7 +481,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  gap: 100px;
+  gap: 50px;
   padding-left: 140px;
   padding-right: 167px;
 }
@@ -502,11 +502,6 @@
 }
 .fourth-section .fourth-section-content {
   width: 30%;
-}
-@media (max-width: 1450px) {
-  .fourth-section .fourth-section-content {
-    width: 60%;
-  }
 }
 @media (max-width: 699px) {
   .fourth-section .fourth-section-content {
