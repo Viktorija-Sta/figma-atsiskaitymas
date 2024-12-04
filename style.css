@@ -367,6 +367,112 @@
   padding-right: 60px;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 3fr;
+  -moz-column-gap: 66px;
+       column-gap: 66px;
+  padding-bottom: 97px;
+}
+footer .first-footer-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+footer .first-footer-column .logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: center;
+  padding-left: 140px;
+}
+footer .first-footer-column .logo img {
+  padding-right: 10px;
+}
+footer .first-footer-column .logo p {
+  color: #647b64;
+  font-weight: bold;
+}
+footer .first-footer-column .address {
+  padding-left: 140px;
+}
+footer .first-footer-column .address ul {
+  padding-left: 0;
+}
+footer .first-footer-column .address ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #4F4F4F;
+  padding-bottom: 16px;
+}
+footer .first-footer-column .address .icons a {
+  text-decoration: none;
+}
+footer .first-footer-column .address .icons img {
+  padding-right: 16px;
+}
+footer .second-footer-column h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #647b64;
+  margin-top: 0;
+}
+footer .second-footer-column ul {
+  padding-left: 0;
+}
+footer .second-footer-column ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #4F4F4F;
+  padding-bottom: 16px;
+}
+footer .third-footer-column h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #647b64;
+  margin-top: 0;
+}
+footer .third-footer-column ul {
+  padding-left: 0;
+}
+footer .third-footer-column ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #4F4F4F;
+  padding-bottom: 16px;
+}
+footer .fourth-footer-column h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #647b64;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+footer .fourth-footer-column form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 15px;
+}
+footer .fourth-footer-column form input#email {
+  width: 283px;
+  height: 133px;
+}
+footer .fourth-footer-column .button {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+  background: linear-gradient(0.25turn, #647B64, #66AC66);
+  margin-top: 29px;
+}
+footer .fourth-footer-column .button a {
+  text-decoration: none;
+  color: #FEFEFE;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

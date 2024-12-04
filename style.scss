@@ -4,6 +4,8 @@
 @use 'page/third-section';
 @use 'page/fourth-section';
 @use 'page/fifth-section';
+@use 'page/footer';
+
 
 *, *::before, *::after {
     box-sizing: border-box;

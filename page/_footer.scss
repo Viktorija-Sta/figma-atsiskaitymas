@@ -1,0 +1,128 @@
+@use 'variables';
+
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 3fr;
+    column-gap: 66px;
+    padding-bottom: 97px;
+
+    .first-footer-column {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .logo {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            align-items: center;
+            padding-left: 140px;
+
+            img {
+                padding-right: 10px;
+            }
+
+            p {
+                color:variables.$color-primary;
+                font-weight: bold;
+            }
+        }
+        .address {
+            padding-left: 140px;
+            
+            ul {
+                padding-left: 0;
+
+                li {
+                    list-style-type: none;
+                    font-size: 14px;
+                    color: variables.$color-p;
+                    padding-bottom: 16px;
+                }
+            }
+            .icons {
+                a {
+                    text-decoration: none;
+                }
+              img {
+                  padding-right: 16px;
+                }    
+            }
+        }
+        
+    }
+    .second-footer-column {
+        h4 {
+            font-weight: normal;
+            font-size: 20px;
+            color: variables.$color-primary;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 0;
+            
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                color: variables.$color-p;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .third-footer-column {
+        h4 {
+            font-weight: normal;
+            font-size: 20px;
+            color: variables.$color-primary;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 0;
+
+            li {
+                list-style-type: none;
+                font-size: 14px;
+                color: variables.$color-p;
+                padding-bottom: 16px;
+            }
+        }
+    }
+    .fourth-footer-column {
+       h3 {
+        font-size: 20px;
+        font-weight: normal;
+        color: variables.$color-primary;
+        margin-top: 0;
+        margin-bottom: 12px;
+       }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding-left: 15px;
+
+            input#email {
+                width: 283px;
+                height: 133px;
+                
+            }
+        }
+        .button {
+            width: 60%;
+            display: grid;
+            grid-template-columns: 6fr 1fr;
+            align-items: center;
+            background: variables.$color-button;
+            margin-top: 29px;
+
+            a {
+                text-decoration: none;
+                color: variables.$color-white;
+                padding: 20px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
