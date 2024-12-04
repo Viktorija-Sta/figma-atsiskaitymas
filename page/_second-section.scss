@@ -4,7 +4,6 @@
 .second-section {
     width: 100%;
     padding-top: 100px;
-    // padding-left: 170px;
     display: grid;
     grid-template-columns: 2fr 3fr;
 
@@ -43,6 +42,10 @@
                 @include r.xl {
                     padding-left: 50px;
                 }
+
+                @include r.sm {
+                    font-size: 13px;
+                }
             }
 
             .section-title {
@@ -58,14 +61,23 @@
                 @include r.xl {
                     padding-left: 50px;
                 }
+
+                @include r.sm {
+                    font-size: 20px;
+                }
             }
         }
         .section-description {
             padding-bottom: 40px;
             padding-left: 170px;
+            font-size: 16px;
 
             @include r.xl {
                 padding-left: 50px;
+            }
+
+            @include r.sm {
+                font-size: 10px;
             }
         }
         .button {
@@ -125,6 +137,10 @@
                    font-size: 24px;
                    font-weight: normal;
                    padding-left: 40px;
+
+                   @include r.sm {
+                    font-size: 12px;
+                    }
     
                 }
                 .communication-description {
@@ -133,6 +149,10 @@
                     padding-left: 40px;
                     padding-bottom: 45px;
                     padding-right: 27px;
+
+                    @include r.sm {
+                        font-size: 8px;
+                    }
                 }
             }
 
@@ -154,6 +174,11 @@
                    font-size: 24px;
                    font-weight: normal;
                    padding-left: 40px;
+
+                   @include r.sm {
+                    font-size: 12px;
+                    }
+
                }
                .communication-description {
                    font-size: 13px;
@@ -161,6 +186,10 @@
                    padding-left: 40px;
                    padding-bottom: 45px;
                    padding-right: 27px;
+
+                   @include r.sm {
+                    font-size: 8px;
+                    }
                }
             }
         }

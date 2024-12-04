@@ -34,11 +34,19 @@
                 color: variables.$color-text;
                 margin: 0;
                 padding-bottom: 24px;
+
+                @include r.sm {
+                    font-size: 24px;
+                }
             }
             .section-description {
                 color: variables.$color-p;
                 padding-bottom: 32px;
-                font-size: large;
+                font-size: 20px;
+
+                @include r.sm {
+                    font-size: 10px;
+                }
             }
             .button {
                 width: 80%;
@@ -57,9 +65,10 @@
             }
         }
         .illustration {
+            width: 100%;
             position: absolute;
-            top: -100px;
-            // margin-left: 100px;
+            top: -50px;
+     
 
             @include r.lg {
                 left: -300px;
@@ -70,9 +79,8 @@
             }
 
             @include r.sm {
-                // overflow: hidden;
+                overflow: auto;
                 position: absolute;
-                
             }
 
             img {
@@ -84,13 +92,6 @@
                 position: absolute;
                 top: 156px;
                 left: 897px;
-    
-                // &::before {
-                //     // background-image: url(images/Ellipse 118.svg);
-                //     content: url(images/Ellipse-118.svg);
-                //     background-repeat: no-repeat;
-    
-                // }
             }
         }
     }

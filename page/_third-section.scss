@@ -3,11 +3,11 @@
 
 .third-section {
     width: 100%;
-   padding-top: 147px;
-   padding-bottom: 171px;
+    padding-top: 147px;
+    padding-bottom: 171px;
 
     .third-section-titles {
-    text-align: center;
+        text-align: center;
 
         .title {
             text-transform: uppercase;
@@ -15,6 +15,10 @@
             color: variables.$color-title;
             font-size: 24px;
             padding-bottom: 17px;
+
+            @include r.sm {
+                font-size: 13px;
+            }
         }
 
         .section-title {
@@ -24,6 +28,10 @@
                 margin: 0;
                 padding-bottom: 56px;
                 text-transform: uppercase;
+
+                @include r.sm {
+                    font-size: 20px;
+                }
         }
     }
     
@@ -60,6 +68,10 @@
                 color: variables.$color-text;
                 font-size: 24px;
                font-weight: normal;
+
+               @include r.sm {
+                font-size: 10px;
+                }
             }
 
             .first-content-description {
@@ -68,6 +80,10 @@
                 padding-bottom: 72px;
                 color: variables.$color-p;
                 font-size: 13px;
+
+                @include r.sm {
+                    font-size: 8px;
+                }
             }
         }
         .second-content {
@@ -91,6 +107,11 @@
                 color: variables.$color-white;
                 font-size: 24px;
                font-weight: normal;
+
+               @include r.sm {
+                font-size: 10px;
+                }
+
             }
 
             .first-content-description {
@@ -99,6 +120,10 @@
                 padding-bottom: 72px;
                 color: variables.$color-white;
                 font-size: 13px;
+
+                @include r.sm {
+                    font-size: 8px;
+                }
             }
         }
     }

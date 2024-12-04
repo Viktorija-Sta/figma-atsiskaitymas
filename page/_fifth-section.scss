@@ -7,6 +7,7 @@
     padding-left: 140px;
     padding-right: 140px;
     padding-bottom: 172px;
+    padding-top: 140px;
 
     @include r.xl {
         padding-left: 50px;
@@ -28,6 +29,10 @@
             font-weight: normal;
             color: variables.$color-title;
             font-size: 24px;
+
+            @include r.sm {
+                font-size: 22px;
+            }
             }
             .section-title {
                 font-size: 41px;
@@ -36,6 +41,10 @@
                 margin: 0;
                 padding-bottom: 40px;
                 text-transform: uppercase;
+
+                @include r.sm {
+                    font-size: 22px;
+                }
             }
         }
         .buttons {
@@ -87,16 +96,24 @@
                 padding-right: 32px;
                 
                 .image {
-                    width: 159px;
+                    max-width: 159px;
                     height: 268px;
                 }
                 .review-top-title {
                     margin-bottom: 5px;
                     font-size: 16px;
+
+                    @include r.sm {
+                        font-size: 12px;
+                    }
                 }
                 .name {
                     font-size: 13px;
                     color: variables.$color-p;
+
+                    @include r.sm {
+                        font-size: 10px;
+                    }
                 }
             }
             .section-description {
@@ -105,6 +122,10 @@
                 font-style: italic;
                 padding-left: 40px;
                 padding-right: 60px;
+
+                @include r.sm {
+                    font-size: 12px;
+                }
             }
         }
     }

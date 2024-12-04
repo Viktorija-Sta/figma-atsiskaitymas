@@ -38,6 +38,7 @@
   display: inline;
   list-style-type: none;
   padding-left: 0;
+  font-size: 16px;
 }
 .top-line .list-in-row li:hover {
   background: rgb(100, 123, 100);
@@ -89,10 +90,20 @@
   margin: 0;
   padding-bottom: 24px;
 }
+@media (max-width: 699px) {
+  .background-circle .first-section .first-section-content .section-title {
+    font-size: 24px;
+  }
+}
 .background-circle .first-section .first-section-content .section-description {
   color: #4F4F4F;
   padding-bottom: 32px;
-  font-size: large;
+  font-size: 20px;
+}
+@media (max-width: 699px) {
+  .background-circle .first-section .first-section-content .section-description {
+    font-size: 10px;
+  }
 }
 .background-circle .first-section .first-section-content .button {
   width: 80%;
@@ -108,8 +119,9 @@
   text-transform: uppercase;
 }
 .background-circle .first-section .illustration {
+  width: 100%;
   position: absolute;
-  top: -100px;
+  top: -50px;
 }
 @media (max-width: 1450px) {
   .background-circle .first-section .illustration {
@@ -124,6 +136,7 @@
 }
 @media (max-width: 699px) {
   .background-circle .first-section .illustration {
+    overflow: auto;
     position: absolute;
   }
 }
@@ -182,6 +195,11 @@
     padding-left: 50px;
   }
 }
+@media (max-width: 699px) {
+  .second-section .second-section-content .background-color .title {
+    font-size: 13px;
+  }
+}
 .second-section .second-section-content .background-color .section-title {
   font-size: 41px;
   font-weight: normal;
@@ -197,13 +215,24 @@
     padding-left: 50px;
   }
 }
+@media (max-width: 699px) {
+  .second-section .second-section-content .background-color .section-title {
+    font-size: 20px;
+  }
+}
 .second-section .second-section-content .section-description {
   padding-bottom: 40px;
   padding-left: 170px;
+  font-size: 16px;
 }
 @media (max-width: 1600px) {
   .second-section .second-section-content .section-description {
     padding-left: 50px;
+  }
+}
+@media (max-width: 699px) {
+  .second-section .second-section-content .section-description {
+    font-size: 10px;
   }
 }
 .second-section .second-section-content .button {
@@ -264,12 +293,22 @@
   font-weight: normal;
   padding-left: 40px;
 }
+@media (max-width: 699px) {
+  .second-section .second-section-communication .first-communication a .communication-title {
+    font-size: 12px;
+  }
+}
 .second-section .second-section-communication .first-communication a .communication-description {
   font-size: 13px;
   color: #4F4F4F;
   padding-left: 40px;
   padding-bottom: 45px;
   padding-right: 27px;
+}
+@media (max-width: 699px) {
+  .second-section .second-section-communication .first-communication a .communication-description {
+    font-size: 8px;
+  }
 }
 .second-section .second-section-communication .second-communication a {
   text-decoration: none;
@@ -288,12 +327,22 @@
   font-weight: normal;
   padding-left: 40px;
 }
+@media (max-width: 699px) {
+  .second-section .second-section-communication .second-communication a .communication-title {
+    font-size: 12px;
+  }
+}
 .second-section .second-section-communication .second-communication a .communication-description {
   font-size: 13px;
   color: #4F4F4F;
   padding-left: 40px;
   padding-bottom: 45px;
   padding-right: 27px;
+}
+@media (max-width: 699px) {
+  .second-section .second-section-communication .second-communication a .communication-description {
+    font-size: 8px;
+  }
 }
 
 .third-section {
@@ -311,6 +360,11 @@
   font-size: 24px;
   padding-bottom: 17px;
 }
+@media (max-width: 699px) {
+  .third-section .third-section-titles .title {
+    font-size: 13px;
+  }
+}
 .third-section .third-section-titles .section-title {
   font-size: 41px;
   font-weight: normal;
@@ -318,6 +372,11 @@
   margin: 0;
   padding-bottom: 56px;
   text-transform: uppercase;
+}
+@media (max-width: 699px) {
+  .third-section .third-section-titles .section-title {
+    font-size: 20px;
+  }
 }
 .third-section .third-section-content {
   display: flex;
@@ -354,12 +413,22 @@
   font-size: 24px;
   font-weight: normal;
 }
+@media (max-width: 699px) {
+  .third-section .third-section-content .first-content .first-content-title {
+    font-size: 10px;
+  }
+}
 .third-section .third-section-content .first-content .first-content-description {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 72px;
   color: #4F4F4F;
   font-size: 13px;
+}
+@media (max-width: 699px) {
+  .third-section .third-section-content .first-content .first-content-description {
+    font-size: 8px;
+  }
 }
 .third-section .third-section-content .second-content {
   width: 30%;
@@ -383,12 +452,22 @@
   font-size: 24px;
   font-weight: normal;
 }
+@media (max-width: 699px) {
+  .third-section .third-section-content .second-content .first-content-title {
+    font-size: 10px;
+  }
+}
 .third-section .third-section-content .second-content .first-content-description {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 72px;
   color: #FEFEFE;
   font-size: 13px;
+}
+@media (max-width: 699px) {
+  .third-section .third-section-content .second-content .first-content-description {
+    font-size: 8px;
+  }
 }
 
 .fourth-section {
@@ -435,6 +514,11 @@
   color: #F3B562;
   font-size: 24px;
 }
+@media (max-width: 699px) {
+  .fourth-section .fourth-section-content .title {
+    font-size: 13px;
+  }
+}
 .fourth-section .fourth-section-content .section-title {
   font-size: 41px;
   font-weight: normal;
@@ -443,9 +527,19 @@
   padding-bottom: 40px;
   text-transform: uppercase;
 }
+@media (max-width: 699px) {
+  .fourth-section .fourth-section-content .section-title {
+    font-size: 22px;
+  }
+}
 .fourth-section .fourth-section-content .section-description {
   font-size: 13px;
   color: #4F4F4F;
+}
+@media (max-width: 699px) {
+  .fourth-section .fourth-section-content .section-description {
+    font-size: 10px;
+  }
 }
 .fourth-section .button {
   width: 80%;
@@ -472,6 +566,7 @@
   padding-left: 140px;
   padding-right: 140px;
   padding-bottom: 172px;
+  padding-top: 140px;
 }
 @media (max-width: 1600px) {
   .fifth-section {
@@ -493,6 +588,11 @@
   color: #F3B562;
   font-size: 24px;
 }
+@media (max-width: 699px) {
+  .fifth-section .fifth-section-top .fifth-section-title .title {
+    font-size: 22px;
+  }
+}
 .fifth-section .fifth-section-top .fifth-section-title .section-title {
   font-size: 41px;
   font-weight: normal;
@@ -500,6 +600,11 @@
   margin: 0;
   padding-bottom: 40px;
   text-transform: uppercase;
+}
+@media (max-width: 699px) {
+  .fifth-section .fifth-section-top .fifth-section-title .section-title {
+    font-size: 22px;
+  }
 }
 .fifth-section .fifth-section-top .buttons {
   display: flex;
@@ -549,16 +654,26 @@
   padding-right: 32px;
 }
 .fifth-section .reviews .first-review .review-title .image {
-  width: 159px;
+  max-width: 159px;
   height: 268px;
 }
 .fifth-section .reviews .first-review .review-title .review-top-title {
   margin-bottom: 5px;
   font-size: 16px;
 }
+@media (max-width: 699px) {
+  .fifth-section .reviews .first-review .review-title .review-top-title {
+    font-size: 12px;
+  }
+}
 .fifth-section .reviews .first-review .review-title .name {
   font-size: 13px;
   color: #4F4F4F;
+}
+@media (max-width: 699px) {
+  .fifth-section .reviews .first-review .review-title .name {
+    font-size: 10px;
+  }
 }
 .fifth-section .reviews .first-review .section-description {
   font-size: 16px;
@@ -566,6 +681,11 @@
   font-style: italic;
   padding-left: 40px;
   padding-right: 60px;
+}
+@media (max-width: 699px) {
+  .fifth-section .reviews .first-review .section-description {
+    font-size: 12px;
+  }
 }
 
 footer {
@@ -629,7 +749,7 @@ footer .first-footer-column .address ul {
 }
 footer .first-footer-column .address ul li {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
   color: #4F4F4F;
   padding-bottom: 16px;
 }
@@ -656,7 +776,7 @@ footer .second-footer-column ul {
 }
 footer .second-footer-column ul li {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 16px;
 }
 footer .second-footer-column ul li a {
@@ -679,7 +799,7 @@ footer .third-footer-column ul {
 }
 footer .third-footer-column ul li {
   list-style-type: none;
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 16px;
 }
 footer .third-footer-column ul li a {

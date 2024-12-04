@@ -39,6 +39,11 @@
             font-weight: normal;
             color: variables.$color-title;
             font-size: 24px;
+
+            @include r.sm {
+                font-size: 13px;
+            }
+
         }
         .section-title {
             font-size: 41px;
@@ -47,10 +52,19 @@
             margin: 0;
             padding-bottom: 40px;
             text-transform: uppercase;
+
+            @include r.sm {
+                font-size: 22px;
+            }
+
         }
         .section-description {
             font-size: 13px;
             color: variables.$color-p;
+
+            @include r.sm {
+                font-size: 10px;
+            }
         }
     }
     .button {
