@@ -3,7 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 50px;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+@media (max-width: 1450px) {
+  .top-line {
+    justify-content: space-around;
+  }
 }
 .top-line .logo {
   display: flex;

@@ -6,7 +6,11 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    @include r.lg {
+        justify-content: space-around;
+    }
     
     
     .logo {
