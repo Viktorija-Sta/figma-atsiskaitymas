@@ -1,50 +1,82 @@
 @use 'variables';
+@use 'responsive'as r;
 
-
-.first-section {
-    width: 100%;
-    padding-top: 155px;
-    padding-left: 180px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-
-    .first-section-content {
-        grid-column: 1 / 2;
-
-        .section-title {
-            font-size: 48px;
-            font-weight: normal;
-            color: variables.$color-text;
-            margin: 0;
-            padding-bottom: 24px;
+.background-circle {
+    background-image: url(images/Ellipse-119.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    padding-bottom: 144px;
+    .first-section {
+        width: 100%;
+        padding-top: 155px;
+        padding-left: 180px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    
+        @include r.xl {
+            padding-left: 50px;
         }
-        .section-description {
-            color: variables.$color-p;
-            padding-bottom: 32px;
-            font-size: large;
-        }
-        .button {
-            width: 80%;
-            display: grid;
-            grid-template-columns: 6fr 1fr;
-            align-items: center;
-            background: variables.$color-button;
-            
-            .section-link {
-                text-decoration: none;
-                color: variables.$color-white;
-                padding: 27px;
-                text-transform: uppercase;
+    
+        .first-section-content {
+            grid-column: 1 / 1;
+            background-image: url(images/Ellipse-116.svg);
+            background-repeat: no-repeat;
+            background-position: top center ;
+    
+            .section-title {
+                font-size: 48px;
+                font-weight: normal;
+                color: variables.$color-text;
+                margin: 0;
+                padding-bottom: 24px;
+            }
+            .section-description {
+                color: variables.$color-p;
+                padding-bottom: 32px;
+                font-size: large;
+            }
+            .button {
+                width: 80%;
+                display: grid;
+                grid-template-columns: 6fr 1fr;
+                align-items: center;
+                background: variables.$color-button;
                 
+                .section-link {
+                    text-decoration: none;
+                    color: variables.$color-white;
+                    padding: 27px;
+                    text-transform: uppercase;
+                    
+                }
             }
         }
-    }
-    .illustration {
-        img {
-            height: 585.91px;
+        .illustration {
             position: absolute;
-            top: 156px;
-            left: 897px;
+            top: -100px;
+            // margin-left: 100px;
+
+            @include r.lg {
+                left: -300px;
+            }
+
+            img {
+                background-image: url(images/Ellipse-118.svg);
+                background-repeat: no-repeat;
+                object-fit: cover;
+                position: absolute;
+                height: 585.91px;
+                position: absolute;
+                top: 156px;
+                left: 897px;
+    
+                // &::before {
+                //     // background-image: url(images/Ellipse 118.svg);
+                //     content: url(images/Ellipse-118.svg);
+                //     background-repeat: no-repeat;
+    
+                // }
+            }
         }
     }
 }

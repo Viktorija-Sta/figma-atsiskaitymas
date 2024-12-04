@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'responsive' as r;
 
 
 footer {
@@ -6,6 +7,8 @@ footer {
     grid-template-columns: 3fr 1fr 1fr 3fr;
     column-gap: 66px;
     padding-bottom: 97px;
+    padding-top: 97px;
+    background-color: #F0DCC5;
 
     .first-footer-column {
         display: flex;
@@ -19,6 +22,10 @@ footer {
             align-items: center;
             padding-left: 140px;
 
+            @include r.xl {
+                padding-left: 50px;
+            }
+
             img {
                 padding-right: 10px;
             }
@@ -30,6 +37,10 @@ footer {
         }
         .address {
             padding-left: 140px;
+
+            @include r.xl {
+                padding-left: 50px;
+            }
             
             ul {
                 padding-left: 0;
@@ -65,8 +76,12 @@ footer {
             li {
                 list-style-type: none;
                 font-size: 14px;
-                color: variables.$color-p;
                 padding-bottom: 16px;
+                
+                a {
+                    text-decoration: none;
+                    color: variables.$color-p;
+                }
             }
         }
     }
@@ -83,13 +98,19 @@ footer {
             li {
                 list-style-type: none;
                 font-size: 14px;
-                color: variables.$color-p;
+                
                 padding-bottom: 16px;
+
+                a {
+                    color: variables.$color-p;
+                    text-decoration: none;
+                }
             }
         }
     }
     .fourth-footer-column {
        h3 {
+        width: 30%;
         font-size: 20px;
         font-weight: normal;
         color: variables.$color-primary;

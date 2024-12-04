@@ -5,6 +5,7 @@
 @use 'page/fourth-section';
 @use 'page/fifth-section';
 @use 'page/footer';
+@use 'page/responsive';
 
 
 *, *::before, *::after {
@@ -16,3 +17,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   
 }
+
+
+header {
+    background: rgb(239,128,49);
+    background: linear-gradient(177deg, rgba(239,128,49,0.09291841736694673) 0%, rgba(239,128,49,0.07050945378151263) 69%, rgba(239,128,49,0.14894082633053218) 100%);
+}
+ main {
+    background: rgb(239,128,49);
+    background: linear-gradient(177deg, rgba(239,128,49,0.08451505602240894) 0%, rgba(239,128,49,0.07050945378151263) 69%, rgba(239,128,49,0) 100%);
+}
+

@@ -1,9 +1,9 @@
 @use 'variables';
+@use 'responsive' as r;
 
 .third-section {
     width: 100%;
    padding-top: 147px;
-   background-color: #E5E5E5;
    padding-bottom: 171px;
 
     .third-section-titles {
@@ -33,6 +33,11 @@
         gap: 40px;
         padding-left: 140px;
         padding-right: 140px;
+        
+        @include r.xl {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
 
         .first-content {
             width: 30%;
@@ -40,8 +45,6 @@
             border-radius: 8px;
 
             img {
-                // width: 64px;
-                // height: 64px;
                 padding-top: 72px;
                 padding-left: 50px;
                 padding-bottom: 15px;
@@ -69,8 +72,6 @@
             border-radius: 8px;
 
             img {
-                // width: 64px;
-                // height: 64px;
                 padding-top: 72px;
                 padding-left: 50px;
                 padding-bottom: 15px;
