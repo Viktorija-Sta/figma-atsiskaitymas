@@ -5,11 +5,16 @@
     flex-wrap: wrap;
     padding-left: 140px;
     padding-right: 140px;
+    padding-bottom: 174px;
 
     .fifth-section-top {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+
         .fifth-section-title {
             .title {
             text-transform: uppercase;
@@ -27,35 +32,59 @@
             }
         }
         .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 23px;
             img {
 
             }
             .active-button {
-                
+                background: rgb(100,123,100);
+                background: linear-gradient(220deg, rgba(100,123,100,1) 26%, rgba(106,221,106,1) 75%);
+                border-radius: 50%;
+                padding: 10px;
+               
             }
         }
     }
-    .review {
+    .reviews {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        column-count: 40px;
         
         .first-review {
+            width: 30%;
+            background: rgb(100, 123, 100);
+            background: linear-gradient(0deg, rgba(100, 123, 100, 0.77) 0%, rgba(100, 123, 100, 0.13) 55%, rgba(100, 123, 100, 0) 66%);
+            border-radius: 8px;
+
             .review-title {
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 40px;
+                padding-right: 32px;
+                
                 .image {
                     width: 159px;
                     height: 268px;
                 }
                 .review-top-title {
-    
+                    margin-bottom: 5px;
+                    font-size: 16px;
                 }
                 .name {
-    
+                    font-size: 13px;
+                    color: variables.$color-p;
                 }
             }
             .section-description {
-                font-size: 13px;
-            color: variables.$color-p;
+                font-size: 16px;
+                color: variables.$color-p;
+                font-style: italic;
+                padding-left: 40px;
+                padding-right: 60px;
             }
         }
     }
