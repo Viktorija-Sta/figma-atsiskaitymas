@@ -8,6 +8,10 @@
     display: grid;
     grid-template-columns: 2fr 3fr;
 
+    @include r.md {
+        grid-template-columns: 1fr;
+    }
+
     .second-section-content {
         padding-right: 109px;
         grid-column: 1 / 2;
@@ -16,12 +20,17 @@
             padding-right: 50px;
         }
 
+        @include r.md {
+            width: 90%;
+            padding-bottom: 70px;
+        }
+
         .background-color {
            
             background: rgb(239,128,49);
             background: linear-gradient(0deg, rgba(239,128,49,0) 0%, rgba(239,128,49,0.06490721288515411) 11%, rgba(239,128,49,0.16014530812324934) 15%);
             
-        
+           
 
             .title {
                 text-transform: uppercase;
@@ -90,6 +99,10 @@
 
         @include r.xl {
             padding-right: 50px;
+        }
+       
+        @include r.md {
+            padding-left: 50px;
         }
 
         .first-communication {

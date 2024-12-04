@@ -13,6 +13,7 @@
         padding-right: 50px;
     }
 
+   
     .fifth-section-top {
         width: 90%;
         display: flex;
@@ -41,6 +42,10 @@
             display: flex;
             gap: 23px;
 
+            @include r.sm {
+                display: none;
+            }
+
             .active-button {
                 background: rgb(100,123,100);
                 background: linear-gradient(220deg, rgba(100,123,100,1) 26%, rgba(106,221,106,1) 75%);
@@ -57,11 +62,23 @@
         justify-content: space-evenly;
         column-count: 40px;
         
+        @include r.md {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+    
+        
         .first-review {
             width: 30%;
             background: rgb(100, 123, 100);
             background: linear-gradient(0deg, rgba(100, 123, 100, 0.77) 0%, rgba(100, 123, 100, 0.13) 55%, rgba(100, 123, 100, 0) 66%);
             border-radius: 8px;
+
+              
+        @include r.md {
+            width: 50%;
+        }
 
             .review-title {
                 display: flex;

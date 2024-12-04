@@ -19,10 +19,21 @@
     img {
         width: 563px;
         height: 545px;
+
+        @include r.sm {
+            width: 100%;
+        }
     }
     .fourth-section-content {
         width: 30%;
-
+        
+        @include r.lg {
+            width: 60%;
+        }
+        
+        @include r.sm {
+            width: 60%;
+        }
         .title {
             text-transform: uppercase;
             font-weight: normal;

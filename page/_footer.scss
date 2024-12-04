@@ -10,10 +10,23 @@ footer {
     padding-top: 97px;
     background-color: #F0DCC5;
 
+      
+    @include r.md {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+        row-gap: 40px;
+    }
+
     .first-footer-column {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+
+        @include r.sm {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+            width: 70%;
+        }
 
         .logo {
             display: flex;
@@ -64,6 +77,11 @@ footer {
         
     }
     .second-footer-column {
+
+        @include r.sm {
+            grid-column: 1 / 2;
+            padding-left: 50px;
+        }
         h4 {
             font-weight: normal;
             font-size: 20px;
@@ -86,6 +104,11 @@ footer {
         }
     }
     .third-footer-column {
+       
+        @include r.md {
+            padding-left: 50px;
+        }
+        
         h4 {
             font-weight: normal;
             font-size: 20px;
@@ -109,6 +132,14 @@ footer {
         }
     }
     .fourth-footer-column {
+        @include r.sm {
+            grid-column: span 3;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
        h3 {
         width: 30%;
         font-size: 20px;
@@ -124,6 +155,10 @@ footer {
             flex-direction: column;
             padding-left: 15px;
 
+            @include r.sm {
+                padding-left: 0;
+            }
+           
             input#email {
                 width: 283px;
                 height: 133px;
@@ -138,6 +173,10 @@ footer {
             background: variables.$color-button;
             margin-top: 29px;
 
+                @include r.sm {
+                    width: 100%;
+                }
+        
             a {
                 text-decoration: none;
                 color: variables.$color-white;

@@ -44,6 +44,10 @@
             background-color: variables.$color-white;
             border-radius: 8px;
 
+            @include r.sm {
+                width: 80%;
+            }
+
             img {
                 padding-top: 72px;
                 padding-left: 50px;
@@ -70,6 +74,10 @@
             width: 30%;
             background-color: variables.$color-primary;
             border-radius: 8px;
+
+            @include r.sm {
+                width: 80%;
+            }
 
             img {
                 padding-top: 72px;
