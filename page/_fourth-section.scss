@@ -18,7 +18,7 @@
     
     img {
         width: 563px;
-        height: 545px;
+        // height: 545px;
 
         @include r.sm {
             width: 100%;
@@ -26,15 +26,25 @@
     }
     .fourth-section-content {
         width: 30%;
+       
+        @include r.md {
+            width: 100%;
+        }
            
         @include r.sm {
-            width: 60%;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
         .title {
             text-transform: uppercase;
             font-weight: normal;
             color: variables.$color-title;
             font-size: 24px;
+
+            @include r.md {
+                font-size: 18px;
+            }
 
             @include r.sm {
                 font-size: 13px;
@@ -49,6 +59,9 @@
             padding-bottom: 40px;
             text-transform: uppercase;
 
+            @include r.md {
+                font-size: 30px;
+            }
             @include r.sm {
                 font-size: 22px;
             }
@@ -70,6 +83,13 @@
         align-items: center;
         background: variables.$color-button;
         
+        @include r.md {
+            width: 50%;
+        }
+
+        @include r.sm {
+            width: 90%;
+        }
 
         .section-link {
             text-decoration: none;

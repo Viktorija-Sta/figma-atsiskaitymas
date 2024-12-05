@@ -31,7 +31,7 @@
             font-size: 24px;
 
             @include r.sm {
-                font-size: 22px;
+                font-size: 13px;
             }
             }
             .section-title {
@@ -47,12 +47,17 @@
                 }
             }
         }
-        .buttons {
+        .arrows {
             display: flex;
             gap: 23px;
 
             @include r.sm {
                 display: none;
+            }
+
+            button {
+                background-color: rgba(255, 255, 255, 0);
+                border: 0px;
             }
 
             .active-button {
@@ -90,6 +95,16 @@
             width: 50%;
         }
 
+        @include r.sm {
+            width: 60%;
+        }
+
+        @include r.xs {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
             .review-title {
                 display: flex;
                 flex-wrap: wrap;
@@ -103,6 +118,7 @@
                 .review-top-title {
                     margin-bottom: 5px;
                     font-size: 16px;
+                    font-weight: normal;
 
                     @include r.sm {
                         font-size: 12px;

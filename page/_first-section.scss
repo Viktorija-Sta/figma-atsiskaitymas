@@ -51,9 +51,15 @@
             .button {
                 width: 80%;
                 display: grid;
-                grid-template-columns: 6fr 1fr;
+                grid-template-columns: 8fr 1fr;
                 align-items: center;
                 background: variables.$color-button;
+
+                @include r.xs {
+                    width: 100%;
+                    padding-right: 10px;
+                    font-size: 10px;
+                }
                 
                 .section-link {
                     text-decoration: none;

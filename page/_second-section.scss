@@ -91,6 +91,14 @@
             @include r.xl {
                 margin-left: 50px;
             }
+
+            @include r.md {
+                width: 50%;
+            }
+
+            @include r.xs {
+                width: 70%;
+            }
             
 
             .section-link {
@@ -114,7 +122,14 @@
         }
        
         @include r.md {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
             padding-left: 50px;
+        }
+
+        @include r.sm {
+            width: 100%;
         }
 
         .first-communication {
@@ -131,6 +146,10 @@
                     border-radius: 8px;
                     margin-top: 40px;
                     margin-left: 40px;
+
+                    @include r.xs {
+                        margin-left: 20px;
+                    }
                 }
                 .communication-title {
                    color: variables.$color-text;
@@ -142,7 +161,11 @@
                     font-size: 12px;
                     }
     
+                    @include r.xs {
+                        padding-left: 20px;
+                    }
                 }
+                
                 .communication-description {
                     font-size: 13px;
                     color: variables.$color-p;
@@ -152,6 +175,11 @@
 
                     @include r.sm {
                         font-size: 8px;
+                    }
+
+                    @include r.xs {
+                        padding-left: 20px;
+                        padding-bottom: 24px;
                     }
                 }
             }
@@ -168,6 +196,10 @@
                    border-radius: 8px;
                    margin-top: 40px;
                    margin-left: 40px;
+
+                   @include r.xs {
+                    margin-left: 20px;
+                }
                }
                .communication-title {
                    color: variables.$color-text;
@@ -177,6 +209,10 @@
 
                    @include r.sm {
                     font-size: 12px;
+                    }
+
+                    @include r.xs {
+                        padding-left: 20px;
                     }
 
                }
@@ -189,6 +225,11 @@
 
                    @include r.sm {
                     font-size: 8px;
+                    }
+
+                    @include r.xs {
+                        padding-left: 20px;
+                        padding-bottom: 24px;
                     }
                }
             }
